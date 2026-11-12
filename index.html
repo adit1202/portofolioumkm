@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Selangkah - Kedai Kopi Lokal</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+      }
+      .card-menu {
+        transition: transform 0.3s ease;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      .card-menu:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      .price-tag {
+        color: #d63384;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">☕ Kopi Selangkah</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">4 Varian Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+            <li class="nav-item"><a class="btn btn-success ms-lg-3" href="https://wa.me/6285745882398?text=Halo%2C%20saya%20mau%20pesan%20Kopi%20Selangkah" target="_blank">Pesan Sekarang</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Kopi Nikmat, Harga Bersahabat</h1>
+        <p class="lead mb-4">Temani harimu dengan 4 varian rasa kopi pilihan khas Kopi Selangkah.</p>
+        <a href="#menu" class="btn btn-primary btn-lg px-4">Lihat Menu Kami</a>
+      </div>
+    </header>
+
+    <!-- 4 Varian Menu Section -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">4 Varian Unggulan</h2>
+          <p class="text-muted">Dibuat dari biji kopi pilihan dengan resep rahasia kualitas terbaik</p>
+        </div>
+        <div class="row g-4">
+          <!-- Varian 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-menu h-100">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Kopi Susu Selangkah" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kopi Susu Selangkah</h5>
+                <p class="card-text text-muted small">Perpaduan espresso, fresh milk, dan brown sugar aren yang creamy.</p>
+                <div class="mt-auto">
+                  <span class="price-tag fs-5">Rp 15.000</span>
+                  <a href="https://wa.me/6285745882398?text=Halo%2C%20saya%20mau%20pesan%20Kopi%20Susu%20Selangkah" target="_blank" class="btn btn-outline-dark btn-sm w-100 mt-2">Pesan Varian Ini</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Varian 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-menu h-100">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Kopi Hitam Manual Brew" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kopi Hitam Manual</h5>
+                <p class="card-text text-muted small">Kopi hitam murni pilihan dengan aroma kuat dan rasa khas.</p>
+                <div class="mt-auto">
+                  <span class="price-tag fs-5">Rp 10.000</span>
+                  <a href="https://wa.me/6285745882398?text=Halo%2C%20saya%20mau%20pesan%20Kopi%20Hitam%20Manual" target="_blank" class="btn btn-outline-dark btn-sm w-100 mt-2">Pesan Varian Ini</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Varian 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-menu h-100">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Kopi Susu Pandan" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kopi Susu Pandan</h5>
+                <p class="card-text text-muted small">Kopi susu dengan sentuhan sirup pandan alami yang harum.</p>
+                <div class="mt-auto">
+                  <span class="price-tag fs-5">Rp 18.000</span>
+                  <a href="https://wa.me/6285745882398?text=Halo%2C%20saya%20mau%20pesan%20Kopi%20Susu%20Pandan" target="_blank" class="btn btn-outline-dark btn-sm w-100 mt-2">Pesan Varian Ini</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Varian 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-menu h-100">
+              <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Creamy Regal Coffee" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Creamy Regal Coffee</h5>
+                <p class="card-text text-muted small">Kopi susu manis dengan taburan remahan biskuit Marie Regal.</p>
+                <div class="mt-auto">
+                  <span class="price-tag fs-5">Rp 20.000</span>
+                  <a href="https://wa.me/6285745882398?text=Halo%2C%20saya%20mau%20pesan%20Creamy%20Regal%20Coffee" target="_blank" class="btn btn-outline-dark btn-sm w-100 mt-2">Pesan Varian Ini</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="bg-white py-5 border-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-3">Tentang Kopi Selangkah</h2>
+            <p class="text-muted">
+              Kopi Selangkah adalah wujud usaha mikro dengan konsep bootstrap yang menyajikan cita rasa kopi berkualitas tinggi tanpa harus merogoh kocek terlalu dalam. Kami berkomitmen menggunakan bahan-bahan segar setiap harinya demi
+              kepuasan pelanggan.
+            </p>
+            <p class="text-muted">Cocok untuk menemani waktu kerja, santai, maupun kumpul bersama teman.</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Kedai Kopi" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Kopi Selangkah. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
